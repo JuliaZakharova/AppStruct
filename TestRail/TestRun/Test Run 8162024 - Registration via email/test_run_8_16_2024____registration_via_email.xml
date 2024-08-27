@@ -1,0 +1,1658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R1</id>
+	<name>Test Run 8/16/2024 -  Registration via email</name>
+	<description>First test of the module Registration page, Registration via email and password</description>
+	<config></config>
+	<createdon>2024-08-16T07:27:44Z</createdon>
+		<completed>true</completed>
+	<completedon>2024-08-27T08:57:03Z</completedon>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>42</percent>
+			<count>10</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>58</percent>
+			<count>14</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>AppStruct tests</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Chrome 127.0.6533.120 tests</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Sign-up page</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Registration via email</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T1</id>
+				<title>Create an account with valid email and password</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>1500</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<steps_separated><step>
+<content>Go to the page https://appstruct.cloud/signup</content><expected>The registration page correctly opened
+ ![](index.php?/attachments/get/7c481b9b-3ee2-4020-a9fc-3c0289ce1252) 
+
+  </expected></step>
+<step>
+<content>Enter test email and password:
+
+
+Email: appstructusertest@gmail.com
+Password: Appstructusertest12345!% </content><expected>The test email and password appear correctly in the input fields</expected></step>
+<step>
+<content>Tick the checkbox &quot;I have read and accept the Terms and Conditions&quot;</content><expected>A blue checkmark appeared in the &quot;I have read and accept the Terms and Conditions&quot; checkbox</expected></step>
+<step>
+<content>Click the Create account button
+
+</content><expected>Registration is complete. A letter about account creation was sent to the test email</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C1</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Failed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>1563</elapsed>
+																																														<defects>Bug-1</defects>
+																<changes>
+															<change>
+						<createdon>2024-08-16T12:49:20Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Failed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 16.08.24</version>
+																														<elapsed>1563</elapsed>
+																														<defects>Bug-1</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Go to the page https://appstruct.cloud/signup</content><expected>The registration page correctly opened
+ ![](index.php?/attachments/get/1ff61c1d-6890-4ebb-9c5c-2ed7f6abd9cb) 
+
+  </expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Enter test email and password:
+
+
+Email: appstructusertest@gmail.com
+Password: Appstructusertest12345!% </content><expected>The test email and password appear correctly in the input fields</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Tick the checkbox &quot;I have read and accept the Terms and Conditions&quot;</content><expected>A blue checkmark appeared in the &quot;I have read and accept the Terms and Conditions&quot; checkbox</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click the Create account button
+
+</content><expected>Registration is complete. A letter about account creation was sent to the test email</expected><actual>User registration via email and password was completed - the service workspace was opened, but the registration email was not sent to the test email - the inbox was empty. ![](index.php?/attachments/get/d014bbd0-ece7-49a3-8726-aa679a1ac5d1)</actual><status>Failed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:44Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																																		<test>
+				<id>T6</id>
+				<title>Log out of the account</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>1200</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ Be a logged in user (see test case C1 “Create an account with valid email and password with clicking the ‘Terms and Conditions’ checkbox”).]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Find the Unlogin button in the User Profile and click it.</content><expected>Unlogging was successful. The registration page opened https://appstruct.cloud/signup</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C6</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Passed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>1423</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2024-08-16T13:15:45Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Passed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment>The logout was successful. The user was redirected to the https://appstruct.cloud/login</comment>
+																		<version>Prod 0, day 16.08.24</version>
+																														<elapsed>1423</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Find the Unlogin button in the User Profile and click it.</content><expected>Unlogging was successful. The registration page opened https://appstruct.cloud/signup</expected><actual>The logout was successful. The user was redirected to the https://appstruct.cloud/login ![](index.php?/attachments/get/4ac050d4-2548-4939-8dbd-f00d296dbf2a)</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T13:01:21Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status></status>
+												<assignedto></assignedto>
+												<comment>Press the dropdown menu near the user icon (1). Select the Sing Out menu item (2).
+
+ ![](index.php?/attachments/get/faa3d7e0-34c0-41f6-8349-522331f1382a)</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2024-08-16T07:27:44Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T23</id>
+				<title>Create an account with the data of an already registered test user</title>
+												<template>Test Case (Steps)</template>
+																<type>Security</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open
+ ![](index.php?/attachments/get/f20e108a-1858-43ab-89a3-bbcdf7a62f57)]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter test email and password:
+
+Email: appstructusertest@gmail.com
+Password: Appstructusertest12345!%
+</content><expected>The test email and password appear correctly in the input fields</expected></step>
+<step>
+<content>Tick the checkbox &quot;I have read and accept the Terms and Conditions&quot;</content><expected>A blue checkmark appeared in the &quot;I have read and accept the Terms and Conditions&quot; checkbox</expected></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C39</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Passed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>790</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2024-08-16T14:21:59Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Passed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment>Registration failed.
+
+The text tooltip “User already exists with this email” appeared below the password field. 
+The pop-up “Error Sing Up”  appeared at the bottom of the browser page.</comment>
+																		<version>Prod 0, day 16.08.24</version>
+																														<elapsed>790</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter test email and password:
+
+Email: appstructusertest@gmail.com
+Password: Appstructusertest12345!%
+</content><expected>The test email and password appear correctly in the input fields</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Tick the checkbox &quot;I have read and accept the Terms and Conditions&quot;</content><expected>A blue checkmark appeared in the &quot;I have read and accept the Terms and Conditions&quot; checkbox</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful</expected><actual>Registration failed.
+
+The text tooltip &amp;amp;ldquo;User already exists with this email&amp;amp;rdquo; appeared below the password field. 
+The pop-up &amp;amp;ldquo;Error Sing Up&amp;amp;rdquo;  appeared at the bottom of the browser page.
+
+ ![](index.php?/attachments/get/70dffb5a-89e7-485e-97e0-9df9e2a24d3d)</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:45Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T4</id>
+				<title>Create an account with invalid email and password with clicking the &quot;Terms and Conditions&quot; checkbox</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open 
+ ![](index.php?/attachments/get/1147582d-27f5-4bd2-9ec7-63a8896399d5)]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter invalid data in the fields: email abra@kadabra.ppp and password 11111111111</content><expected>Invalid data is confirmed by the tooltips that appear &quot;Provide a valid email&quot; and &quot;Password must be at least 12 characters&quot;</expected></step>
+<step>
+<content>Tick the checkbox &quot;I have read and accept the Terms and Conditions&quot;</content><expected>A blue checkmark appeared in the &quot;I have read and accept the Terms and Conditions&quot; checkbox</expected></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C4</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Failed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>524</elapsed>
+																																														<defects>Bug-2</defects>
+																<changes>
+															<change>
+						<createdon>2024-08-16T14:38:23Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Failed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 16.08.24</version>
+																														<elapsed>524</elapsed>
+																														<defects>Bug-2</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter invalid data in the fields: email abra@kadabra.ppp and password 11111111111</content><expected>Invalid data is confirmed by the tooltips that appear &quot;Provide a valid email&quot; and &quot;Password must be at least 12 characters&quot;</expected><actual>The email abra@kadabra.ppp, which should be invalid, was recognized by the system as valid.
+
+ ![](index.php?/attachments/get/25a7bee9-9e42-4928-a44d-92c34e9c9b52)</actual><status>Failed</status></step>
+<step>
+<content>Tick the checkbox &quot;I have read and accept the Terms and Conditions&quot;</content><expected>A blue checkmark appeared in the &quot;I have read and accept the Terms and Conditions&quot; checkbox</expected><actual></actual><status>Untested</status></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful</expected><actual></actual><status>Untested</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:44Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T24</id>
+				<title>Create an account with invalid email and password without clicking the &quot;Terms and Conditions&quot; checkbox</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ Go to the registration page https://appstruct.cloud/signup
+ ![](index.php?/attachments/get/a0bceef4-7184-4122-ba9e-398b4247032d)]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter invalid data in the fields: email abra@kadabra.ppp and password 11111111111</content><expected>Invalid data is confirmed by the tooltips that appear &quot;Provide a valid email&quot; and &quot;Password must be at least 12 characters&quot;</expected></step>
+<step>
+<content>Do not tick the checkbox &quot;I have read and accept the Terms and Conditions&quot;</content><expected>No blue checkmark in the &amp;ldquo;I have read and accept the Terms and Conditions&amp;rdquo; checkbox</expected></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C40</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Failed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>351</elapsed>
+																																														<defects>Bug-2</defects>
+																<changes>
+															<change>
+						<createdon>2024-08-16T14:47:38Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Failed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 16.08.24</version>
+																														<elapsed>351</elapsed>
+																														<defects>Bug-2</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter invalid data in the fields: email abra@kadabra.ppp and password 11111111111</content><expected>Invalid data is confirmed by the tooltips that appear &quot;Provide a valid email&quot; and &quot;Password must be at least 12 characters&quot;</expected><actual>The email abra@kadabra.ppp, which should be invalid, was recognized by the system as valid.
+
+ ![](index.php?/attachments/get/7b2ee65d-c010-46c7-b01e-744bb353913f)</actual><status>Failed</status></step>
+<step>
+<content>Do not tick the checkbox &quot;I have read and accept the Terms and Conditions&quot;</content><expected>No blue checkmark in the &amp;ldquo;I have read and accept the Terms and Conditions&amp;rdquo; checkbox</expected><actual></actual><status>Untested</status></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful</expected><actual></actual><status>Untested</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:45Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T3</id>
+				<title>Create an account with invalid email abra@kadabra.ppp</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open.
+   ![](index.php?/attachments/get/b96cf3c8-2466-4b18-96f9-ddbc8e276544) 
+Password testtest12345 has been entered.
+The “I have read and accept the Terms and Conditions” checkbox is ticked]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter email abra@kadabra.ppp
+
+</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C3</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Failed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>268</elapsed>
+																																														<defects>Bug-2</defects>
+																<changes>
+															<change>
+						<createdon>2024-08-16T14:57:58Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Failed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 16.08.24</version>
+																														<elapsed>268</elapsed>
+																														<defects>Bug-2</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter email abra@kadabra.ppp
+
+</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected><actual>The email abra@kadabra.ppp, which should be invalid, was recognized by the system as valid. 
+
+ ![](index.php?/attachments/get/2bf23c8f-58b6-4164-9f0a-f99ec11e37fd)</actual><status>Failed</status></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected><actual></actual><status>Untested</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:44Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T7</id>
+				<title>Create an account with invalid email abra@kadabrappp</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open.
+   ![](index.php?/attachments/get/3db4b22b-d08b-4238-a3f4-2a5ee40cadfa) 
+Password testtest12345 has been entered.
+The “I have read and accept the Terms and Conditions” checkbox is ticked.]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter email: abra@kadabrappp
+
+</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive
+</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C22</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Failed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>212</elapsed>
+																																														<defects>Bug-3</defects>
+																<changes>
+															<change>
+						<createdon>2024-08-19T09:04:28Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Failed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 19.08.24</version>
+																														<elapsed>212</elapsed>
+																														<defects>Bug-3</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter email: abra@kadabrappp
+
+</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected><actual>The email abra@kadabrappp, which should be invalid, was recognized by the system as valid. 
+
+ ![](index.php?/attachments/get/64c757dc-0763-4310-aa52-9e25d249d8a3)</actual><status>Failed</status></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive
+</expected><actual></actual><status>Untested</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:44Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T8</id>
+				<title>Create an account with invalid email abrakadabra.ppp</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open.
+ ![](index.php?/attachments/get/8a8d6a9f-6d1b-45ac-8356-a78e444f49ba) 
+Password testtest12345 has been entered.
+The “I have read and accept the Terms and Conditions” checkbox is ticked.]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter email: abrakadabra.ppp
+
+</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C23</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Passed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>411</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2024-08-19T09:12:02Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Passed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 19.08.24</version>
+																														<elapsed>411</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter email: abrakadabra.ppp
+
+</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected><actual>Passed. The email address abrakadabra.ppp has been identified by the system as invalid.
+
+ ![](index.php?/attachments/get/20a3f3d0-f294-4ddc-8f56-785f237aafa8)</actual><status>Passed</status></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected><actual>Passed. Registration is not possible - the &amp;ldquo;Create account&amp;rdquo; button is not active.
+
+ ![](index.php?/attachments/get/46b0ec9d-0153-4adc-8e93-a1c405b39997)</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:44Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T9</id>
+				<title>Create an account with invalid email abrakadabrappp</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open.
+ ![](index.php?/attachments/get/7644629c-95d2-4687-8147-66de972159a2) 
+Password testtest12345 has been entered.
+The “I have read and accept the Terms and Conditions” checkbox is ticked.]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter email: abrakadabrappp
+</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C24</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Passed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>200</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2024-08-19T09:16:11Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Passed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 19.08.24</version>
+																														<elapsed>200</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter email: abrakadabrappp
+</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected><actual>The email address abrakadabrappp has been identified by the system as invalid.
+
+ ![](index.php?/attachments/get/69d60735-2b7e-4d23-bf9c-7cf2352e60bb)</actual><status>Passed</status></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected><actual>Registration is not possible - the &amp;amp;ldquo;Create account&amp;amp;rdquo; button is not active.
+
+ ![](index.php?/attachments/get/106c7968-0eef-4e4a-9022-1880a953053e)</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:44Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T10</id>
+				<title>Create an account with invalid email абырвалг@тт.тт</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open.
+ ![](index.php?/attachments/get/24ab115c-80a9-48a1-aca0-d6d4500799c5) 
+Password testtest12345 has been entered.
+The “I have read and accept the Terms and Conditions” checkbox is ticked.]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter email: абырвалг@тт.тт
+</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C25</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Passed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>237</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2024-08-19T09:20:42Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Passed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 19.08.24</version>
+																														<elapsed>237</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter email: абырвалг@тт.тт
+</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected><actual>The email address абырвалг@тт.тт has been identified by the system as invalid.
+
+ ![](index.php?/attachments/get/c154894b-ca63-4ec9-94ed-4646523a70b6)</actual><status>Passed</status></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected><actual>Registration is not possible - the &amp;ldquo;Create account&amp;rdquo; button is not active.
+
+ ![](index.php?/attachments/get/b4060bf2-6a1e-4467-b3fd-f8a4aa4ce1f7)</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:44Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T11</id>
+				<title>Create an account with invalid email 111@11.11</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open.
+ ![](index.php?/attachments/get/d2aa884e-5103-4660-96bd-5d4083f845eb) 
+Password testtest12345 has been entered.
+The “I have read and accept the Terms and Conditions” checkbox is ticked.]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter email: 111@11.11
+</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C26</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Failed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>331</elapsed>
+																																														<defects>Bug-4</defects>
+																<changes>
+															<change>
+						<createdon>2024-08-19T09:31:56Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Failed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 19.08.24</version>
+																														<elapsed>331</elapsed>
+																														<defects>Bug-4</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter email: 111@11.11
+</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected><actual>The email 111@11.11, which should be invalid, was recognized by the system as valid. 
+
+ ![](index.php?/attachments/get/8dbbfa1a-6ce2-49fc-aaa3-295800278f2a)</actual><status>Failed</status></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected><actual></actual><status>Untested</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:44Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T12</id>
+				<title>Create an account with invalid email 111@1111</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open.
+   ![](index.php?/attachments/get/081a111a-3027-43d2-bc0c-656a25acb1eb) 
+Password testtest12345 has been entered.
+The “I have read and accept the Terms and Conditions” checkbox is ticked.]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter email 111@1111
+</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive
+</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C27</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Failed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>132</elapsed>
+																																														<defects>Bug-4</defects>
+																<changes>
+															<change>
+						<createdon>2024-08-19T10:00:38Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Failed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 19.08.24</version>
+																														<elapsed>132</elapsed>
+																														<defects>Bug-4</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter email 111@1111
+</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected><actual>The email 111@11.11, which should be invalid, was recognized by the system as valid.
+
+ ![](index.php?/attachments/get/642edf68-4fd4-4899-8177-e3b3ec1b6e2e)</actual><status>Failed</status></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive
+</expected><actual></actual><status>Untested</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:44Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T13</id>
+				<title>Create an account with invalid email 11111.11</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open.
+   ![](index.php?/attachments/get/2a83630e-c5aa-42cc-858c-47030d0dc7b3) 
+Password testtest12345 has been entered.
+The “I have read and accept the Terms and Conditions” checkbox is ticked.]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter email 11111.11</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C28</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Passed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>352</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2024-08-19T10:06:56Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Passed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 19.08.24</version>
+																														<elapsed>352</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter email 11111.11</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected><actual>The email address 11111.11 has been identified by the system as invalid. ![](index.php?/attachments/get/14d2cc82-373f-47f1-a185-e8134763204e)</actual><status>Passed</status></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected><actual>Registration is not possible - the &amp;ldquo;Create account&amp;rdquo; button is not active.
+
+ ![](index.php?/attachments/get/05d9edf5-2bc1-42f4-bbe2-2af8009222ea)</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:44Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T14</id>
+				<title>Create an account with invalid email ___@1111</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open.
+   ![](index.php?/attachments/get/87aee170-2083-4768-b659-d6d826636596) 
+Password testtest12345 has been entered.
+The “I have read and accept the Terms and Conditions” checkbox is ticked.]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter email ___@1111</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;
+</expected></step>
+<step>
+<content>Click the Create account button</content><expected>
+	
+
+The registration was not successful. The Create account button must be inactive
+</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C29</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Failed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>130</elapsed>
+																																														<defects>Bug-5</defects>
+																<changes>
+															<change>
+						<createdon>2024-08-19T10:16:01Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Failed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 19.08.24</version>
+																														<elapsed>130</elapsed>
+																														<defects>Bug-5</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter email ___@1111</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;
+</expected><actual>The email ___@1111, which should be invalid, was recognized by the system as valid.
+
+ ![](index.php?/attachments/get/239b4f63-aba7-448b-b63a-1dae3baae62e)</actual><status>Failed</status></step>
+<step>
+<content>Click the Create account button</content><expected>
+	
+
+The registration was not successful. The Create account button must be inactive
+</expected><actual></actual><status>Untested</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:45Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T17</id>
+				<title>Create an account with invalid email ?@1111</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open.
+ ![](index.php?/attachments/get/a63005cc-6bdd-48b7-bc89-42bc57d898f0)   
+Password testtest12345 has been entered.
+The “I have read and accept the Terms and Conditions” checkbox is ticked.]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter email ?@1111</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;
+</expected></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C32</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Failed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>103</elapsed>
+																																														<defects>Bug-5</defects>
+																<changes>
+															<change>
+						<createdon>2024-08-19T10:18:12Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Failed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 19.08.24</version>
+																														<elapsed>103</elapsed>
+																														<defects>Bug-5</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter email ?@1111</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;
+</expected><actual>The email ?@1111, which should be invalid, was recognized by the system as valid.
+
+ ![](index.php?/attachments/get/62c9cadd-5e6d-4f97-9bd5-bbd1a10aebbe)</actual><status>Failed</status></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected><actual></actual><status>Untested</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:45Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T15</id>
+				<title>Create an account with invalid email f@1111</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open.
+ ![](index.php?/attachments/get/5e03371d-600c-435d-851f-4d1a19672320)   
+Password testtest12345 has been entered.
+The “I have read and accept the Terms and Conditions” checkbox is ticked.]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter email f@1111</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C30</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Failed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>112</elapsed>
+																																														<defects>Bug-6</defects>
+																<changes>
+															<change>
+						<createdon>2024-08-19T10:20:23Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Failed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 19.08.24</version>
+																														<elapsed>112</elapsed>
+																														<defects>Bug-6</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter email f@1111</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected><actual>The email f@1111, which should be invalid, was recognized by the system as valid.
+
+ ![](index.php?/attachments/get/5cd2c1a9-8636-4024-bc87-6be01a6072a3)</actual><status>Failed</status></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected><actual></actual><status>Untested</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:45Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T18</id>
+				<title>Create an account with invalid email &gt;@1111</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open.
+ ![](index.php?/attachments/get/bc7dbb38-2f17-4b8b-be4c-6f27ec49c336)   
+Password testtest12345 has been entered.
+The “I have read and accept the Terms and Conditions” checkbox is ticked.]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter email &amp;amp;gt;@1111</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive
+</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C33</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Passed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>215</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2024-08-19T10:24:23Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Passed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 19.08.24</version>
+																														<elapsed>215</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter email &amp;amp;gt;@1111</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected><actual>The email address &amp;amp;gt;@1111 has been identified by the system as invalid.
+
+ ![](index.php?/attachments/get/902cffef-c971-4daf-b19a-dcaae243e795)</actual><status>Passed</status></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive
+</expected><actual>Registration is not possible - the &amp;ldquo;Create account&amp;rdquo; button is not active.
+
+ ![](index.php?/attachments/get/fc93c343-8086-4d3f-b93d-8d364648d75a)</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:45Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T16</id>
+				<title>Create an account with invalid email ы@1111</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open.
+ ![](index.php?/attachments/get/44355123-c792-4a9a-9d2b-9caa01aaa7d0)   
+Password testtest12345 has been entered.
+The “I have read and accept the Terms and Conditions” checkbox is ticked.]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter email ы@1111</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C31</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Passed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>150</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2024-08-19T10:27:55Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Passed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 19.08.24</version>
+																														<elapsed>150</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter email ы@1111</content><expected>Under the mail field, it should show a tooltip that says &quot;Provide a valid email&quot;</expected><actual>The email address ы@1111 has been identified by the system as invalid.
+
+ ![](index.php?/attachments/get/0df10ccb-5c5c-4326-be8a-400c10bfdc37)</actual><status>Passed</status></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected><actual>Registration is not possible - the &amp;ldquo;Create account&amp;rdquo; button is not active.
+
+ ![](index.php?/attachments/get/895bf9c4-3d55-4a2a-9b3a-bf57b86ed4a3)</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:45Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T2</id>
+				<title>Create an account with invalid 11-character password</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open
+ ![](index.php?/attachments/get/ad9add70-55de-44c7-bdfa-a2d65be1d545)
+Email appstructusertest@gmail.com has been entered.
+The “I have read and accept the Terms and Conditions” checkbox is ticked.]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter 11-character password: 11111111111
+</content><expected>Under the Password field should appear the tooltip &quot;Password must be at least 12 characters&quot;</expected></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C2</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Passed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>280</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2024-08-19T10:33:18Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Passed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 19.08.24</version>
+																														<elapsed>280</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter 11-character password: 11111111111
+</content><expected>Under the Password field should appear the tooltip &quot;Password must be at least 12 characters&quot;</expected><actual>The 11-character password 11111111111 was identified by the system as invalid.
+
+ ![](index.php?/attachments/get/d73040e4-1bc0-4256-a99b-1290a9f99b03)</actual><status>Passed</status></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected><actual>Registration is not possible - the &amp;ldquo;Create account&amp;rdquo; button is not active.
+
+ ![](index.php?/attachments/get/f52633ed-fe87-4680-823c-97231379bf9c)</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:44Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T19</id>
+				<title>Create an account with invalid password ____________</title>
+												<template>Test Case (Steps)</template>
+																<type>Security</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open
+ ![](index.php?/attachments/get/920a344c-3d33-4f8d-b79f-99bee582f2d0) 
+Email appstructusertest@gmail.com has been entered.
+The “I have read and accept the Terms and Conditions” checkbox is ticked.]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter 12-character password : ____________</content><expected>The &amp;ldquo;Password not secure&amp;rdquo; tooltip appeared</expected></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive
+</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C34</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Failed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>195</elapsed>
+																																														<defects>Bug-7</defects>
+																<changes>
+															<change>
+						<createdon>2024-08-19T10:50:26Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Failed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 19.08.24</version>
+																														<elapsed>195</elapsed>
+																														<defects>Bug-7</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter 12-character password : ____________</content><expected>The &amp;ldquo;Password not secure&amp;rdquo; tooltip appeared</expected><actual>The 12-character password ____________, which should be invalid, was identified by the system as valid.
+
+ ![](index.php?/attachments/get/9f68cebe-5f91-4b67-ab1a-32e58266c60b)</actual><status>Failed</status></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive
+</expected><actual></actual><status>Untested</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:45Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T20</id>
+				<title>Create an account with invalid password 111111111111</title>
+												<template>Test Case (Steps)</template>
+																<type>Security</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open
+ ![](index.php?/attachments/get/501384ba-9aac-4dfb-8b20-1efaf801b9a7) 
+Email appstructusertest@gmail.com has been entered.
+The “I have read and accept the Terms and Conditions” checkbox is ticked.]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter 12-character password : 111111111111</content><expected>The &amp;ldquo;Password not secure&amp;rdquo; tooltip appeared</expected></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C35</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Failed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>174</elapsed>
+																																														<defects>Bug-7</defects>
+																<changes>
+															<change>
+						<createdon>2024-08-19T10:54:02Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Failed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 19.08.24</version>
+																														<elapsed>174</elapsed>
+																														<defects>Bug-7</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter 12-character password : 111111111111</content><expected>The &amp;ldquo;Password not secure&amp;rdquo; tooltip appeared</expected><actual>No tooltip  &amp;amp;ldquo;Password not secure&amp;amp;rdquo;.
+
+ ![](index.php?/attachments/get/e5b532ab-8b20-4784-91b1-2555e0a80beb)</actual><status>Failed</status></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected><actual></actual><status>Untested</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:45Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T21</id>
+				<title>Create an account with invalid password ffffffffffff</title>
+												<template>Test Case (Steps)</template>
+																<type>Security</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open
+ ![](index.php?/attachments/get/8ced5ac1-ffc6-4c8a-8478-34fe5195adbb) 
+Email appstructusertest@gmail.com has been entered.
+The “I have read and accept the Terms and Conditions” checkbox is ticked.]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter 12-character password : ffffffffffff</content><expected>The &amp;ldquo;Password not secure&amp;rdquo; tooltip appeared</expected></step>
+<step>
+<content>Click the Create account button</content><expected>
+	
+
+The registration was not successful. The Create account button must be inactive
+</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C36</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Failed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>79</elapsed>
+																																														<defects>Bug-7</defects>
+																<changes>
+															<change>
+						<createdon>2024-08-19T10:55:42Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Failed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 19.08.24</version>
+																														<elapsed>79</elapsed>
+																														<defects>Bug-7</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter 12-character password : ffffffffffff</content><expected>The &amp;ldquo;Password not secure&amp;rdquo; tooltip appeared</expected><actual>No tooltip  &amp;amp;ldquo;Password not secure&amp;amp;rdquo;.
+
+ ![](index.php?/attachments/get/03c5a995-e487-4945-a02e-5d94b151dd07)</actual><status>Failed</status></step>
+<step>
+<content>Click the Create account button</content><expected>
+	
+
+The registration was not successful. The Create account button must be inactive
+</expected><actual></actual><status>Untested</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:45Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T22</id>
+				<title>Create an account with invalid password фффффффффффф</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open
+ ![](index.php?/attachments/get/1a29c7d0-095e-4e12-be8c-62f3bc7d29d2) 
+Email appstructusertest@gmail.com has been entered.
+The “I have read and accept the Terms and Conditions” checkbox is ticked.]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Enter 12-character password : фффффффффффф</content><expected>The tooltip &amp;ldquo;Provide password using English case&amp;rdquo; appeared below the password field</expected></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C37</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Failed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>171</elapsed>
+																																														<defects>Bug-8</defects>
+																<changes>
+															<change>
+						<createdon>2024-08-19T10:58:58Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Failed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 19.08.24</version>
+																														<elapsed>171</elapsed>
+																														<defects>Bug-8</defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Enter 12-character password : фффффффффффф</content><expected>The tooltip &amp;ldquo;Provide password using English case&amp;rdquo; appeared below the password field</expected><actual>No tooltip &amp;amp;ldquo;Provide password using English case&amp;amp;rdquo;.
+
+ ![](index.php?/attachments/get/5c80c204-2a3d-46ce-a05d-9df3fba9ea9d)</actual><status>Failed</status></step>
+<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected><actual></actual><status>Untested</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:45Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T5</id>
+				<title>Create an account with empty fields</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The registration page https://appstruct.cloud/signup is open
+ ![](index.php?/attachments/get/1412dd21-3793-4e47-8dd4-d5f42d80fd35) 
+The “I have read and accept the Terms and Conditions” checkbox is ticked.]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C5</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Passed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>179</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2024-08-19T11:02:14Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Passed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>Prod 0, day 19.08.24</version>
+																														<elapsed>179</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Click the Create account button</content><expected>The registration was not successful. The Create account button must be inactive</expected><actual>Registration is not possible - the &amp;ldquo;Create account&amp;rdquo; button is not active.
+
+ ![](index.php?/attachments/get/62ade195-676c-434c-b167-3341ed4f4140)</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-16T07:27:44Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+			</section>
+</sections>
+			</section>
+</sections>
+			</section>
+</sections>
+</run>
