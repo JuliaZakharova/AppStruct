@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R5</id>
+	<name>Test Run 8/27/2024 - Registration via Google account</name>
+	<description></description>
+	<config></config>
+	<createdon>2024-08-27T14:50:12Z</createdon>
+		<completed>true</completed>
+	<completedon>2024-08-29T11:27:56Z</completedon>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>67</percent>
+			<count>2</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>33</percent>
+			<count>1</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>AppStruct tests</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Chrome 127.0.6533.120 tests</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Sign-up page</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Registration via Google account</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T39</id>
+				<title>Sign in via via Google with a Personal Google Account</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate>1800</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The personal Google account being used for registration is not yet registered in the system.]]>
+							</preconds>
+																													<steps_separated><step>
+<content>Go to the registration page: https://appstruct.cloud/signup.</content><expected>The registration page should load correctly, displaying options for registering via email and social media accounts, including a &quot;Sign in with Google&quot; button.</expected></step>
+<step>
+<content>Click on the &quot;Sign in with Google&quot; button.</content><expected>The system should redirect to the Google account selection or sign-in page.</expected></step>
+<step>
+<content>Select my personal Google account yukasiitake@gmail.com from the list of accounts.</content><expected>The Google authentication process should complete, and the system should automatically retrieve necessary account information (e.g., email, name) from Google.</expected></step>
+<step>
+<content> Observe the system&apos;s response after Google authentication.</content><expected>- The system should register the new user account using the information provided by Google.
+- A welcome message or confirmation screen should appear, indicating successful registration.
+- The user should be automatically logged into the application and redirected to the appropriate logged-in area (e.g., dashboard or homepage).</expected></step>
+<step>
+<content>Verify that the user is logged in and has access to the account settings or profile page.</content><expected>- The account settings or profile page should display the correct information pulled from the Google account (e.g., email, name).
+- The user should have access to all functionalities available to newly registered users.</expected></step>
+</steps_separated>
+															</custom>
+												<caseid>C8</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Passed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>744</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2024-08-29T08:02:42Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Passed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment></comment>
+																		<version>version: 0.0.18</version>
+																														<elapsed>744</elapsed>
+																														<defects></defects>
+																														<custom>
+															<step_results>
+																		<step>
+<content>Go to the registration page: https://appstruct.cloud/signup.</content><expected>The registration page should load correctly, displaying options for registering via email and social media accounts, including a &quot;Sign in with Google&quot; button.</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Click on the &quot;Sign in with Google&quot; button.</content><expected>The system should redirect to the Google account selection or sign-in page.</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Select my personal Google account yukasiitake@gmail.com from the list of accounts.</content><expected>The Google authentication process should complete, and the system should automatically retrieve necessary account information (e.g., email, name) from Google.</expected><actual></actual><status>Untested</status></step>
+<step>
+<content> Observe the system&apos;s response after Google authentication.</content><expected>- The system should register the new user account using the information provided by Google.
+- A welcome message or confirmation screen should appear, indicating successful registration.
+- The user should be automatically logged into the application and redirected to the appropriate logged-in area (e.g., dashboard or homepage).</expected><actual></actual><status>Passed</status></step>
+<step>
+<content>Verify that the user is logged in and has access to the account settings or profile page.</content><expected>- The account settings or profile page should display the correct information pulled from the Google account (e.g., email, name).
+- The user should have access to all functionalities available to newly registered users.</expected><actual>Registration was successful.
+
+
+ ![](index.php?/attachments/get/775a37c0-562b-4632-9c54-fcc42cab3530)</actual><status>Passed</status></step>
+								</step_results>
+													</custom>
+											</change>
+															<change>
+						<createdon>2024-08-27T14:50:12Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T38</id>
+				<title>Log out of the account</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The user is logged into their account on the application.]]>
+							</preconds>
+																													<steps>Click the Sign Out button in the dropdown menu near the user icon in the top-right corner.</steps>
+																													<expected>The user should log out and be redirected to the home page or login page.</expected>
+															</custom>
+												<caseid>C7</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Passed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>115</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2024-08-29T11:03:10Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Passed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment>The unlogging was successful. It took me to https://appstruct.cloud/login.
+
+ ![](index.php?/attachments/get/3f1d9d15-379d-4c9f-bde5-697391320e4c)</comment>
+																		<version>version: 0.0.18</version>
+																														<elapsed>115</elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2024-08-27T14:50:12Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T40</id>
+				<title>Sing in via Google with an already registered account</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<preconds>
+								<![CDATA[ The user has already registered an account using the same email address via Google.
+Test data: account appstructusertest@gmail.com]]>
+							</preconds>
+																													<steps>1. Go to the page https://appstruct.cloud/signup.
+2. Click Sign in with Google and select the already registered Google account appstructusertest@gmail.com.</steps>
+																													<expected>Registration is blocked, and an error message indicates the account is already registered.</expected>
+															</custom>
+												<caseid>C41</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Failed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>1426</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2024-08-29T11:27:41Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Failed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment>The system immediately lets the user into the service. Without checking if such an account already exists.</comment>
+																		<version>version: 0.0.18</version>
+																														<elapsed>1426</elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2024-08-27T14:50:12Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+			</section>
+</sections>
+			</section>
+</sections>
+			</section>
+</sections>
+</run>
