@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R4</id>
+	<name>Test Run 8/27/2024 - Privacy Policy</name>
+	<description></description>
+	<config></config>
+	<createdon>2024-08-27T14:49:37Z</createdon>
+		<completed>true</completed>
+	<completedon>2024-08-29T12:08:48Z</completedon>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>100</percent>
+			<count>3</count>
+		</passed>
+											<blocked>
+			<percent>0</percent>
+			<count>0</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>0</percent>
+			<count>0</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>AppStruct tests</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Chrome 127.0.6533.120 tests</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Landing page</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Privacy Policy</name>
+		<description></description>
+						<tests>
+						            																																																			<test>
+				<id>T35</id>
+				<title>Verify the presence and accessibility of Privacy Policy</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Low</priority>
+																<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<steps>1. Open the homepage https://appstruct.cloud/.
+2. Scroll to the footer and locate the link to the Privacy Policy.
+3. Click on the Privacy Policy link.
+4. Verify that the document opens correctly.</steps>
+																													<expected>1. The Privacy Policy link is present and leads to the correct document.
+2. The document loads without errors and displays correctly across all supported devices and browsers.</expected>
+															</custom>
+												<caseid>C15</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Passed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>155</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2024-08-29T12:05:52Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Passed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment>Opened correctly</comment>
+																		<version>October 23, 2023</version>
+																														<elapsed>155</elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2024-08-27T14:49:37Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T36</id>
+				<title>Verify correct display of Privacy Policy text</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Low</priority>
+																<estimate>1200</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<steps>1. Open the Privacy Policy document https://appstruct.cloud/privacy-policy.
+2. Check that the text is fully visible and not cut off.
+3. Verify that the formatting (headings, lists, paragraphs) is correct.</steps>
+																													<expected>The text is fully readable, and formatting matches the design mockup (headings, lists, paragraphs, etc.).</expected>
+															</custom>
+												<caseid>C16</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Passed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>132</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2024-08-29T12:08:13Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Passed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment>The document is readable, formatting is unified</comment>
+																		<version>October 23, 2023</version>
+																														<elapsed>132</elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2024-08-27T14:49:37Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+									            																																																			<test>
+				<id>T37</id>
+				<title>Verify the version and updates of Privacy Policy</title>
+												<template>Test Case (Text)</template>
+																<type>Regression</type>
+																<priority>Low</priority>
+																<estimate>900</estimate>
+																								<references></references>
+																				<custom>
+																							<automation_type><id>0</id><value> None</value></automation_type>
+																													<steps>1. Open the Privacy Policy document.
+2. Ensure that the latest version of the document is displayed.
+3. Check for the version number if applicable.</steps>
+																													<expected>The latest version of the document is displayed, and the version number is accurate if applicable.</expected>
+															</custom>
+												<caseid>C17</caseid>
+																			<casestatus></casestatus>
+																													<caseassignedto>Julia Zakharova</caseassignedto>
+																							<status>Passed</status>
+																<assignedto>Julia Zakharova</assignedto>
+																<inprogress></inprogress>
+																																										<elapsed>16</elapsed>
+																																																						<changes>
+															<change>
+						<createdon>2024-08-29T12:08:41Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Passed</status>
+																								<assignedto>Julia Zakharova</assignedto>
+																		<comment>Last updated: October 23, 2023</comment>
+																		<version>October 23, 2023</version>
+																														<elapsed>16</elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2024-08-27T14:49:37Z</createdon>
+																		<createdby>Julia Zakharova</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+			</section>
+</sections>
+			</section>
+</sections>
+			</section>
+</sections>
+</run>
